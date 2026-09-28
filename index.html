@@ -3,9 +3,43 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Countdown Timer</title>
+        <link rel=""stylesheet" href="style.css">
     </head>
     <body>
-        <h1>Hi</h1>
+        <header>Countdown Timer</header>
+        <main>
+            <section class=""timer-box">
+             <form id="timerForm">
+                <label for="dateTime">Select Date and Time:</label>
+                <input type="datetime-local" id="dateTime">
+                <button type="submit">Start</button>
+             </form>
+            <section class="countdown">
+                <div>
+                    <span id="days">00</span>
+                    <p>Days</p>
+                </div>
+                <div>
+                    <span id="hours">00</span>
+                    <p>Hours</p>
+                </div>
+                <div>
+                    <span id="minutes">00</span>
+                    <p>Minutes</p>
+                </div>
+                <div>
+                    <span id="seconds">00</span>
+                    <p>Seconds</p>
+                </div>
+            </section>
+            <div class="buttons">
+                <button id="pauseBtn" type="button">Pause</button>
+                <button id="resetBtn" type="button">Reset</button>
+            </div>
+            <p id="message"></p>
+            </section>
+        </main>
+        <script src="script.js"></script>
     </body>
 </html>
